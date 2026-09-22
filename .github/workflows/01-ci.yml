@@ -1,3 +1,5 @@
+name: 01 - CI
+
 on:
   pull_request:
     branches:
@@ -7,8 +9,9 @@ on:
     branches:
       - main
 
-  workflow_dispatchname: 01 - CI
+  workflow_dispatch:
 
+jobs:
 
 
 jobs:
