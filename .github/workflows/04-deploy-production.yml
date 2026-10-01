@@ -30,7 +30,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
+        with:
+          ref: ${{ env.IMAGE_TAG }}
       - name: Login to Azure
         uses: azure/login@v3
         with:
